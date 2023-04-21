@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Calibri;
+}
+
+:root{
+    --Amarelo:#FFE6B7;
+    --Vermelho:#C62C24;
+    --Cinza:#B6B7BC;
+    --Azul:#7C89B6;
+}
+
+header > h1{
+    border: 1px solid black;
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 2%;
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-style: italic;
+    background-color: var(--Cinza);
+    color: var(--Azul);
+}
+
+table{
+    
+}
+table > tbody > tr > td{
+    border: 1px solid black;
+}
