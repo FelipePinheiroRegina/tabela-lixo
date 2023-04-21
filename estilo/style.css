@@ -13,23 +13,124 @@
     --Azul:#7C89B6;
 }
 
+body{
+    background-color: var(--Azul);
+}
+
+main{
+    height: 350px;
+    margin-top: 10px;
+    background-color: white;
+    
+    
+}
+
+header{
+    margin-top: 5%;
+    margin-left: 2%;
+    text-transform: uppercase;
+    font-style: italic;
+    
+}
+
 header > h1{
     border: 1px solid black;
     width: 350px;
     height: 50px;
-    margin: auto;
-    text-align: center;
-    padding-top: 2%;
-    margin-top: 3%;
-    text-transform: uppercase;
-    font-style: italic;
+    padding: 5px;
     background-color: var(--Cinza);
     color: var(--Azul);
+    display: inline;
+    text-shadow: 1px 1px 3px var(--Amarelo);
+}
+
+div{
+    height: 340px;
+    overflow-x: auto;
+}
+
+div::-webkit-scrollbar{
+    
 }
 
 table{
-    b
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    box-shadow:0px 0px 5px var(--Vermelho);   
+}
+
+table > thead > tr > th{
+    position: sticky;
+    top: 0px;
+    
+    border: 1px solid black;
+    padding: 10px;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: var(--Cinza);
+    color: var(--Azul);
+    text-shadow: 1px 1px 3px var(--Amarelo);
+    
+    
 }
 table > tbody > tr > td{
     border: 1px solid black;
+    padding: 10px;
+    background-color: white;
 }
+
+table > tbody > tr:nth-child(2n){
+    background-color: var(--Azul);
+}
+
+.data{
+    text-align: left;
+    width: 100px;
+}
+
+.nome{
+    text-align: center;
+    width: 100px;
+}
+
+.diadasemana{
+    text-align: right;
+    
+}
+
+.fds{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: var(--Cinza);
+    color: var(--Azul);
+    text-shadow: 1px 1px 3px var(--Amarelo);
+}
+
+aside{
+    position: relative;
+    left: 400px;
+    bottom: 330px;
+    
+    width: 180px;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 1px 1px 3px var(--Vermelho);
+}
+
+ol > li{
+    list-style-position: inside;
+}
+footer{
+    
+    height: 200px;
+    background-image: url(lixo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
