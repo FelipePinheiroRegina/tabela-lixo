@@ -6,3 +6,6 @@ function formatardata(dataatual){
 }
 data.innerHTML = formatardata(dataatual)
 data.style.marginLeft = '160px'
+
+
+
