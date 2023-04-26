@@ -25,6 +25,7 @@ main{
     border-radius: 15px;
     overflow: hidden;
     margin-top: 5%;
+    box-shadow:1px 1px 10px black;
 }
 
 header{
@@ -33,6 +34,7 @@ header{
     margin-left: 2%;
     text-transform: uppercase;
     font-style: italic;
+    
     
 }
 
@@ -45,11 +47,19 @@ header > h1{
     color: var(--Azul);
     display: inline;
     text-shadow: 1px 1px 3px var(--Amarelo);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
 }
 
+header > h1:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 div{
     height: 340px;
     overflow-x: auto;
+    
     
 }
 
@@ -63,7 +73,7 @@ table{
     margin-top: 10px;
     margin-left: 10px;
     position: relative;
-    box-shadow:0px 0px 5px black;
+    box-shadow:1px 1px 10px black;
    
     
    
@@ -123,6 +133,7 @@ table > tbody > tr:nth-child(2n){
 aside > h1{
     background-color: rgba(255, 255, 255, 0.366);
     width: 180px;
+    box-shadow:1px 1px 10px black;
 }
 
 aside{
@@ -151,7 +162,29 @@ ol > li{
     
 }
 footer{
+    margin-top: 3%;
+}
+
+footer > p {
+    text-align: center;
+}
+footer > p > a{
+    color: black;
+    text-decoration: none;
     
- 
+}
+footer > p.red{
+    
+    text-align: center;
+    font-weight: bolder;
+    box-sizing: border-box;
+    
+}
+
+footer > p.red:hover, a:hover{
+    padding-left: 5px;
+    color: var(--Vermelho);
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
