@@ -1,190 +1,190 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Calibri;
+    font-family: 'Playfair', serif;
 }
 
 :root{
-    --Amarelo:#FFE6B7;
-    --Vermelho:#C62C24;
-    --Cinza:#B6B7BC;
-    --Azul:#7C89B6;
+    --Verde:#3AF0C4;
+    --Azul:#6DAFF7;
+    
+    
 }
 
 body{
-    background-color: var(--Azul);
+    background-image: linear-gradient(to left, var(--Azul), var(--Verde));
 }
 
-main{
-    width: 800px;
-    height: 350px;
-    background-color: white;
+#global{
+    box-shadow: 0px 8px 10px black;
+    width: 500px;
     margin: auto;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-top: 5%;
-    box-shadow:1px 1px 10px black;
+    border-radius: 7px;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 100px;
+    background: transparent;
+    border-radius: 3px;
+    margin: auto;
+}
+
+.relogio div{
+    height: 70px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(6, 6, 6, 0.887);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.relogio span.tempo{
+    font-size: 10px;
 }
 
 header{
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 2%;
-    text-transform: uppercase;
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 100px;
+    background: transparent;
+    border-radius: 3px;
     
-    
+    margin: auto;
 }
 
-header > h1{
-    border: 1px solid black;
-    width: 350px;
-    height: 50px;
-    padding: 5px;
-    background-color: var(--Cinza);
-    color: var(--Azul);
-    display: inline;
-    text-shadow: 1px 1px 3px var(--Amarelo);
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px black;
+header > div{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(6, 6, 6, 0.887);
+    border-radius: 7px;
+    letter-spacing: 3px;
 }
 
-header > h1:hover{
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-div{
-    height: 340px;
-    overflow-x: auto;
-    
-    
+header span{
+    font-weight: bold;
+    font-size: 30px;
 }
 
-div::-webkit-scrollbar{
-    
+main{
+   height: 350px;
 }
 
 table{
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin-top: 10px;
-    margin-left: 10px;
     position: relative;
-    box-shadow:1px 1px 10px black;
-   
-    
-   
+    top: 10%;
+    left: 15vw;
+    border-collapse: collapse;
+    box-shadow: 0px 7px 10px black;
+    border-radius: 7px;
 }
 
-table > thead > tr > th{
+table td, th{
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table th{
+    background: rgba(6, 6, 6, 0.887);
+    color: #fff;
+}
+table thead{
+    background: rgba(6, 6, 6, 0.887);
+    color: #fff;
     position: sticky;
-    top: -1px;
-    
-    border: 1px solid black;
-    padding: 10px;
-    font-style: italic;
-    text-transform: uppercase;
-    background-color: var(--Cinza);
-    color: var(--Azul);
-    text-shadow: 1px 1px 3px var(--Amarelo);
-    
-    
-    
-}
-table > tbody > tr > td{
-    border: 1px solid black;
-    padding: 10px;
+    top: 0px;
     
 }
 
-table > tbody > tr:nth-child(2n){
-    background-color: var(--Azul);
+div#rolagem{
+    overflow-x: auto;
+    height: 350px;
+    
+    
+}
+#rolagem::-webkit-scrollbar{
+    display: none;
+}
+
+#ordem{
+    position: relative;
+    float: right;
+    bottom: 90%;
+    right: 20%;
+    background: rgba(6, 6, 6, 0.887);
+    color: #fff;
+    width: 300px;
+    height: 315px;
+    box-shadow: 0px 7px 10px black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    
+}
+#ordem > h1{
+    text-align: center;
+}
+
+ol > li {
+    list-style-position: inside;
+    margin-left: 10px;
 }
 
 .data{
-    text-align: left;
-    width: 100px;
+    text-align: center;
 }
-
 .nome{
     text-align: center;
-    width: 100px;
 }
 
 .diadasemana{
     text-align: right;
-    
 }
 
-.fds{
-    padding: 10px;
-    text-align: center;
-    border: 1px solid black;
-    font-style: italic;
-    text-transform: uppercase;
-    background-color: var(--Cinza);
-    color: var(--Azul);
-    text-shadow: 1px 1px 3px var(--Amarelo);
-}
-
-aside > h1{
-    background-color: rgba(255, 255, 255, 0.366);
-    width: 180px;
-    box-shadow:1px 1px 10px black;
-}
-
-aside{
-    position: relative;
-    left: 400px;
-    bottom: 330px;
-    
-    width: 300px;
-    
-    border: 1px solid black;
-    padding: 10px;
-    box-shadow: 1px 1px 3px black;
-    height: 309px;
-    background-image: url(lixo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    border-radius: 10px;
-}
-
-ol > li{
-    list-style-position: inside;
-    background-color: rgba(255, 255, 255, 0.366);
-    width: 180px;
-    font-weight: bolder;
-    
-}
 footer{
-    margin-top: 3%;
+    width: 300px;
+    background: rgba(6, 6, 6, 0.887);
+    color: #fff;
+    margin: 15px auto 0px auto;
+    border-radius: 7px;
+}
+
+footer > p > a{
+    color: blue;
 }
 
 footer > p {
+    padding-top: 7px;
+    height: 30px;
     text-align: center;
-}
-footer > p > a{
-    color: black;
-    text-decoration: none;
-    
-}
-footer > p.red{
-    
-    text-align: center;
-    font-weight: bolder;
-    box-sizing: border-box;
-    
 }
 
-footer > p.red:hover, a:hover{
-    padding-left: 5px;
-    color: var(--Vermelho);
-    box-sizing: border-box;
-    cursor: pointer;
-}
+
+
+
 
