@@ -1,3 +1,3 @@
 # Tabela de Lixo
 ## Tabela para recolher o lixo da conferência
-- Site: [Acesse](felipepinheioregina.github.io/tabela-lixo)
+- Site: [Acesse](https://felipepinheiroregina.github.io/tabela-lixo/)
